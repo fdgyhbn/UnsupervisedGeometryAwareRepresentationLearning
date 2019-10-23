@@ -47,8 +47,8 @@ class IgniteTrainNVS:
         #config_dict_test = {k:v for k,v in config_dict.items()}
         #config_dict_cams = {k:v for k,v in config_dict.items()}
         
-        # some default values
-        config_dict['implicit_rotation'] = config_dict.get('implicit_rotation', False)
+        # some default values   #一些默认值
+        config_dict['implicit_rotation'] = config_dict.get('implicit_rotation', False) #返回指定键的值，如果值不在字典中返回默认值
         config_dict['skip_background'] = config_dict.get('skip_background', True)
         config_dict['loss_weight_pose3D'] = config_dict.get('loss_weight_pose3D', 0)
         config_dict['n_hidden_to3Dpose'] = config_dict.get('n_hidden_to3Dpose', 2)
